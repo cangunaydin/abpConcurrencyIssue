@@ -1,0 +1,43 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "@proxy": [
+        "src/app/proxy/index.ts"
+      ],
+      "@proxy/*": [
+        "src/app/proxy/*"
+      ],
+      "@doohlink/campaign-management": [
+        "projects/campaign-management/src/public-api.ts"
+      ],
+      "@doohlink/campaign-management/config": [
+        "projects/campaign-management/config/src/public-api.ts"
+      ],
+      "@doohlink/inventory-management": [
+        "projects/inventory-management/src/public-api.ts"
+      ],
+      "@doohlink/inventory-management/config": [
+        "projects/inventory-management/config/src/public-api.ts"
+      ]
+    },
+    "useDefineForClassFields": false
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false
+  }
+}
